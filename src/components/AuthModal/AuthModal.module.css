@@ -1,0 +1,51 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.guest {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.switch {
+  color: #007aff;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}

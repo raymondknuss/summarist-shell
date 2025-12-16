@@ -1,0 +1,223 @@
+.choose-plan-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050816;
+  padding: 24px;
+}
+
+.choose-plan-card {
+  width: 100%;
+  max-width: 720px;
+  background: #0b1020;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+  color: #f9fafb;
+}
+
+.choose-plan-header {
+  margin-bottom: 24px;
+}
+
+.choose-plan-title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+.choose-plan-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+.choose-plan-toggle-section {
+  margin-bottom: 24px;
+}
+
+.choose-plan-toggle-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.choose-plan-toggle {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: #111827;
+  border: 1px solid #1f2937;
+}
+
+.choose-plan-toggle-button {
+  position: relative;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.08s ease;
+}
+
+.choose-plan-toggle-button.active {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #f9fafb;
+  transform: translateY(-1px);
+}
+
+.choose-plan-badge {
+  font-size: 0.7rem;
+  background: rgba(15, 118, 110, 0.18);
+  color: #a7f3d0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.choose-plan-pricing {
+  margin-bottom: 24px;
+}
+
+.choose-plan-price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.choose-plan-price-sub {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.choose-plan-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.choose-plan-benefits li {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.choose-plan-benefits li::before {
+  content: "•";
+  display: inline-block;
+  margin-right: 8px;
+  color: #22c55e;
+}
+
+.choose-plan-accordion {
+  border-top: 1px solid #1f2937;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.choose-plan-accordion-item+.choose-plan-accordion-item {
+  border-top: 1px solid #111827;
+}
+
+.choose-plan-accordion-header {
+  width: 100%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.choose-plan-accordion-icon {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-left: 12px;
+}
+
+.choose-plan-accordion-body {
+  padding-bottom: 12px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.choose-plan-footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choose-plan-continue-button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #f9fafb;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.45);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.1s ease;
+}
+
+.choose-plan-continue-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.55);
+  filter: brightness(1.04);
+}
+
+.choose-plan-continue-button:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.4);
+}
+
+.choose-plan-legal {
+  font-size: 0.75rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .choose-plan-card {
+    padding: 24px 18px;
+  }
+
+  .choose-plan-title {
+    font-size: 1.4rem;
+  }
+
+  .choose-plan-price {
+    font-size: 1.7rem;
+  }
+
+  .choose-plan-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .choose-plan-toggle-button {
+    flex: 1;
+    justify-content: center;
+    padding-inline: 10px;
+  }
+}
